@@ -1,0 +1,38 @@
+<html>
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+</head>
+<body>
+
+	<header>
+		<div th:insert="fragments/navigation :: nav"></div>
+	</header>
+	<br>
+
+	<div class="row">
+
+		<div class="container ">
+			<h3 class="text-center">add address</h3>
+			<hr>
+			<form action="/meteo" method="post">
+				<div>
+					<label for="address">Please input your adresse :</label> <input
+						name="address" id="address">
+
+				</div>
+				<button type="submit" class="btn btn-dark">Get the weather
+					at the given address !</button>
+
+			</form>
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>
